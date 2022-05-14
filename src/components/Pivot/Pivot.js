@@ -48,6 +48,7 @@ class Pivot extends Component {
  
     render() {
         return (
+            
             <div className="dhx-container_inner" id="pivot"></div>
         );
     }
