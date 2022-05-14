@@ -3,12 +3,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import btn1 from '../assets/images/btn_demografia-1.png';
 import BarChart from "../components/BarChart";
 import Menu from "../components/Menu";
+import Pivot from '../components/Pivot';
 import '../assets/css/App.css';
 
 
 
 
 class Grafica1 extends Component{
+
+    constructor() {
+        super();
+        this.state = { items: [] };
+    }
+
+   
+
+    componentDidMount() {
+        fetch('http://localhost:2000/tables')
+        .then((response) => response.json())  
+	    .then((dog) => console.log(dog));
+
+    }
+
+
 
     render(){
         return(
@@ -26,9 +43,9 @@ class Grafica1 extends Component{
 
                 <div class="col-12">
                     <div class="abs-center mt-2">
-                    <div className="graf1">
-                    <BarChart></BarChart>
-                </div>
+                    <div>
+                   <Pivot />
+                   </div>
                     </div>
                 </div>
                 </div>
