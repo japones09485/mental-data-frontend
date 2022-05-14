@@ -11,6 +11,8 @@ import '../assets/css/App.css';
 
 class Grafica1 extends Component{
 
+    
+
     constructor() {
         super();
         this.state = { items: [] };
