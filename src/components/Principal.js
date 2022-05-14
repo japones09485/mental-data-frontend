@@ -35,8 +35,10 @@ class Principal extends Component{
                     </div>
                     <div class="col">
                     <div id="logo">
+                    <Link to="/rutaG2" className="link">
                                 <img src ={btn2} className="Icon_front m-1"></img>
-                                <h5>Salud Mental</h5>
+                                <br></br>
+                                    Salud Mental</Link>
                             </div>
                     </div>
                     <div class="col">

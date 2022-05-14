@@ -1,5 +1,6 @@
 import Principal from './components/Principal';
 import Grafica1 from './components/Grafica1';
+import Grafica2 from './components/Grafica2';
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom" 
 
@@ -15,6 +16,7 @@ function App() {
            <Routes>
               <Route path="/" element={<Principal />} />
               <Route path="rutaG1" element={<Grafica1 />} />
+              <Route path="rutaG2" element={<Grafica2 />} />
             </Routes>
         </div>
        </Router>
