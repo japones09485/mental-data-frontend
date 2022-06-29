@@ -18,7 +18,7 @@ class Grafica1 extends Component{
    
 
     componentDidMount() {
-        fetch('http://localhost:3000/tables')
+        fetch('http://localhost:2000/tables')
         .then((response) => response.json())  
 	    .then((dog) => console.log(dog));
 

@@ -1,6 +1,7 @@
 import Principal from './components/Principal';
 import Grafica1 from './components/Grafica1';
 import Grafica2 from './components/Grafica2';
+import Grafica3 from './components/Grafica3';
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom" 
 
@@ -17,6 +18,7 @@ function App() {
               <Route path="/" element={<Principal />} />
               <Route path="rutaG1" element={<Grafica1 />} />
               <Route path="rutaG2" element={<Grafica2 />} />
+              <Route path="rutaG3" element={<Grafica3 />} />
             </Routes>
         </div>
        </Router>

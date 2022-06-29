@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-const info = async () =>{
+const info = async (state) =>{
  const data = await axios.get('http://localhost:2000/tables')
- console.log(data);
+ state(data.data);
 }
 
 export{
-  info
+    info
 }

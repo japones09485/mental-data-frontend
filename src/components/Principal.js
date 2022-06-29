@@ -43,8 +43,9 @@ class Principal extends Component{
                     </div>
                     <div class="col">
                     <div id="logo">
+                    <Link to="/rutaG3" className="link">
                     <img src ={btn3} className="Icon_front m-1"></img>
-                    <h5>Enfermedades Crónicas y No Transmisibles</h5>
+                    <h5>Enfermedades Crónicas y No Transmisibles</h5></Link>
                             </div>
                     </div>
 
